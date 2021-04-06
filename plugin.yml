@@ -1,0 +1,15 @@
+name: CollarCheck
+main: org.slabserver.plugin.collarcheck.CollarCheck
+version: 0.0.1-SNAPSHOT
+api-version: 1.15
+commands:
+  petcheck:
+    description: Toggles the pet inspector. When enabled, right click a pet to check its owner.
+    usage: /petcheck
+    permission: collarcheck.petcheck
+    permission-message: You don't have permission collarcheck.petcheck
+
+permissions:
+  collarcheck.petcheck:
+    description: Allows you to run /petcheck.
+    default: op
